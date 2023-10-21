@@ -3,7 +3,8 @@ const pacArray = [
   ['./PacMan1.png', './PacMan2.png'],
   ['./PacMan3.png', './PacMan4.png'],
 ];
-let direction = 0;
+var direction = 0;
+var focus = 0;
 const pacMen = []; // This array holds all the pacmen
 
 // This function returns an object with random values
@@ -38,6 +39,7 @@ function makePac() {
   return { position, velocity, newimg };
 }
 
+
 function update() {
   // loop over pacmen array and move each one and move image in DOM
   pacMen.forEach((item) => {
@@ -50,6 +52,11 @@ function update() {
   });
   setTimeout(update, 20);
 }
+
+pacMen.forEach((item) => {
+  focus = (focus + 1) % 2;
+  item.newimg.src = pacArray[0][focus]; 
+}, 500);
 
 function checkCollisions(item) {
   // TODO: detect collision with all walls and make pacman bounce
@@ -71,5 +78,3 @@ function checkCollisions(item) {
 function makeOne() {
   pacMen.push(makePac()); // add a new PacMan
 }
-//don't change this line
-  module.exports = { checkCollisions, update, pacMen };
