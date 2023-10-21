@@ -16,7 +16,7 @@ that disapear, maybe with a 'pop' sound or visual effect once the a pacmen
 overlaps with them.
 
 ## Appearance:
-<img src="PacMan1.png">
+<img src= "pacman_readme_pic.png" width='300'/>
 
 ## License information: 
 
