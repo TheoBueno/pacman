@@ -1,4 +1,4 @@
-#  Title of the project: Pacmen
+#  Title of the project: Pacman
 
 ## Description of the project:
 
