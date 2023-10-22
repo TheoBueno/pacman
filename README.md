@@ -18,8 +18,9 @@ overlaps with them.
 ## Appearance:
 <img src= "pacman_readme_pic.png" width='300'/>
 
-## Link:
+## Links:
 [Exercise](https://theobueno.github.io/pacman/exe/index.html)
+[Repository](https://github.com/TheoBueno/pacman.git/)
 
 ## License information: 
 
